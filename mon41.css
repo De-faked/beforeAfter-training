@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+}
+
+header,
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    position: relative;
+    display: inline;
+    font-size: 2rem;
+}
+
+.header-text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 10%;
+    background-color: rgb(7, 190, 120);
+}
+.header-text:hover::after{
+    width: 90%;
+    background-color: blue;
+}
+
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(21, 129, 70, 0.237);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
